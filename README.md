@@ -5,4 +5,4 @@ Here the code has been divided into two inline modules for hotel and the restaur
 
 It is recommended to use Turbo C++ for better runtime experience.
 
-Few C++ graphics has also been inculcated with the use of graphics.h
+Few C++ graphics has also been inculcated with the use of graphics.h header file.
