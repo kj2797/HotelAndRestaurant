@@ -9,5 +9,5 @@ Few C++ graphics has also been inculcated with the use of graphics.h header file
 
 Kindly note that some special characters has been used for graphical purposes that may cause your compiler to malfunction.
 
-
+Remove the same and replace them with mathematical symbols or any other symbol that you may like.
 
