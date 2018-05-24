@@ -96,3 +96,333 @@ void main()            //starting of main
    end :
 
 }                            //end of main() function
+
+
+void welcome()
+{
+      clrscr();
+      for(int i=0;i<=37;i++)
+      {
+	      cout<<"* ";
+	      delay(50);
+      }
+      for(int a=0;a<25;a++)
+      {
+	      gotoxy(80,a);
+	      cout<<"*";
+	      delay(50);
+      }
+      for(i=1;i<=38;i++)
+      {
+	      gotoxy(1,i);
+	      cout<<"* ";
+	      delay(50);
+      }
+      for(i=0;i<=24;i++)
+      {
+	      cout<<"* ";
+	      delay(50);
+	      gotoxy(i,70);
+      }
+      cout<<"*";
+
+      gotoxy(3,8);              //welcome w start
+
+      for(i=0;i<=8;i++)
+      {
+      gotoxy(3,i+8);
+      cout<<"";
+      delay(30);
+      }
+      cout<<"";
+      int l=16;
+
+      for(i=0;l>=11;i++,l--)
+       {
+       gotoxy(i+4,l);
+       cout<<"";
+       delay(30);
+       }
+      int k=11;
+
+      for(i=0;k<=16;i++,k++)
+      {
+      gotoxy(i+8,k);
+      cout<<"";
+      delay(30);
+      }
+
+     for(i=0;i<=8;i++)
+     {
+     gotoxy(14,i+8);
+     cout<<"";
+     delay(30);
+     }                     //  w end
+
+     for(i=0;i<=8;i++)    //start of e
+	{
+	gotoxy(16,i+8);
+	cout<<"@";
+	delay(30);
+	}
+	gotoxy(17,8);
+
+    for(i=0;i<=3;i++)
+       {
+       cout<<" @";
+       delay(30);
+       }
+	gotoxy(17,12);
+
+    for(i=0;i<=3;i++)
+       {
+       cout<<" @";
+       delay(30);
+       }
+	gotoxy(17,16);
+
+    for(i=0;i<=3;i++)
+       {
+       cout<<" @";
+       delay(30);
+       }               //end of e
+
+
+
+    for(i=0;i<=8;i++)       //start of l
+	{
+	gotoxy(27,i+8);
+	cout<<"";
+	delay(30);
+	}
+
+    for(i=0;i<=3;i++)
+       {
+       cout<<" ";
+       delay(30);
+       }                 //end of l
+
+    gotoxy(43,8);                         //start of c
+
+    for(i=0;i<=6;i++)
+      {
+      cout<<"#";
+      delay(30);
+      gotoxy(43-i,8);
+      }
+
+    for(i=0;i<=9;i++)
+      {
+      cout<<"#";
+      delay(30);
+      gotoxy(37,8+i);
+      }
+      gotoxy(38,16);
+
+    for(i=0;i<=5;i++)
+      {
+      cout<<"#";
+      delay(30);
+      }
+      gotoxy(52,8);                         //start of c
+
+    for(i=0;i<=6;i++)                 //start of o
+      {
+      cout<<"";
+      delay(30);
+      gotoxy(52-i,8);
+      }
+
+    for(i=0;i<=9;i++)
+      {
+      cout<<"";
+      delay(30);
+      gotoxy(46,8+i);
+      }
+     gotoxy(47,16);
+
+   for(i=0;i<=5;i++)
+      {
+      cout<<"";
+      delay(30);
+      }
+
+   for(i=8;i>=0;i--)
+   {
+   gotoxy(53,16-i);
+   cout<<"";
+   delay(30);
+    }                  //end of o
+
+   gotoxy(54,16);  	//start of m
+
+   for(i=0;i<=8;i++)
+   {
+   gotoxy(55,i+8);
+   cout<<"$";
+   delay(30);
+    }
+   gotoxy(55,16);
+   cout<<"$";
+   l=8;
+
+   for(i=56;l<=13;i++,l++)
+      {
+      gotoxy(i,l);
+	cout<<"$";
+	delay(30);
+      }
+   k=13;
+
+   for(i=60;k>7;i++,k--)
+      {
+      gotoxy(i,k);
+	cout<<"$";
+	delay(30);
+      }
+
+   for(i=8;i<=16;i++)
+   {
+   gotoxy(66,i);
+   cout<<"$";
+    delay(30);
+    }                     //end of m
+
+    for(i=8;i<=16;i++)    //start of e
+	{
+	gotoxy(68,i);
+	cout<<"";
+	delay(30);
+	}
+	gotoxy(69,8);
+
+    for(i=0;i<=3;i++)
+       {
+       cout<<" ";
+       delay(30);
+       }
+	gotoxy(69,12);
+
+    for(i=0;i<=3;i++)
+       {
+       cout<<" ";
+       delay(30);
+       }
+	gotoxy(69,16);
+
+    for(i=0;i<=3;i++)
+       {
+       cout<<" ";
+       delay(30);
+       }               //end of e
+
+
+    gotoxy(3,17);
+    for(i=0;i<73;i++)
+    {
+    cout<<"=";
+    delay(30);
+    }
+
+    delay(300);
+    //to
+
+    gotoxy(17,17);
+    cout<<"\n*\t\t\t   ++++++++++++   ++++++++++   ";
+    cout<<"\n*\t\t\t	||        |        |   ";
+    cout<<"\n*\t\t\t	||        |        |   ";
+    cout<<"\n*\t\t\t	||        |        |   ";
+    cout<<"\n*\t\t\t	||        |        |   ";
+    cout<<"\n*\t\t\t	||        ++++++++++  ";
+    delay(3000);
+    i=0;
+    clrscr();
+
+   for(int U=1,j=80;U<=80;U++,j--)
+   {
+   gotoxy(U,1);
+   cout<<"";
+   gotoxy(j,10);
+   cout<<"";
+   delay(30);
+   }
+   gotoxy(4,3);
+   cout<<"     ||======))   ==========    ++++++++   ++++++++          $";
+   cout<<"\n        ||      ))       ||              ++         ++         $ $";
+   cout<<"\n        ||======))       ||            ++         ++          $   $";
+   cout<<"\n        ||               ||          ++         ++           $$$$$$$";
+   cout<<"\n        ||               ||        ++         ++   	    $       $";
+   cout<<"\n        ||           ==========    ++++++++   ++++++++     $         $";
+   delay(1000);
+
+
+   for(int o=1,m=24,r=6;o<25;o++,m--,r+=3)
+   {
+     gotoxy(1,o);
+     cout<<"";
+     delay(80);
+     gotoxy(80,m);
+     cout<<"";
+     gotoxy(r,23);
+     cout<<"";
+   }
+   delay(500);
+
+
+     gotoxy(1,11);
+     cout<<"\n        ||=====||        $       ||            #      ||=====    ";
+     cout<<"\n        ||     ||       $ $      ||           # #     ||              ";
+     cout<<"\n        ||=====||      $   $     ||          #   #    ||         ";
+     cout<<"\n        ||            $$$$$$$    ||         #######   ||              ";
+     cout<<"\n        ||           $       $   ||=====   #       #  ||=====    ";
+   delay(4000);
+   up :
+   gotoxy(10,20);
+   cout<<"               PROCEED TO ORDERING (Y/N): ";
+   char t;
+   cin>>t;
+   if(t=='n' || t=='N')
+     {
+     clrscr();
+     cout<<"\n\n\n\n\t\t\t\tPROCESSING";
+     cout<<" . ";
+     delay(400);
+     cout<<" . ";
+     delay(400);
+     cout<<" . ";
+     delay(800);
+     cout<<" . ";
+     clrscr();
+     goto up;
+     }
+   else if(t!='y' && t!='Y')
+     {
+     clrscr();
+     cout<<"\n\n\n\n\t\t\t\tPROCESSING";
+     cout<<" . ";
+     delay(400);
+     cout<<" . ";
+     delay(400);
+     cout<<" . ";
+     delay(800);
+     cout<<" . ";
+     clrscr();
+     cout<<"\n\n\n\n\t\t\t\tINVALID ENTRY\n\t\t\t\tTRY AGAIN";
+     delay(2000);
+     clrscr();
+     goto up;
+     }
+     clrscr();
+     cout<<"\n\n\n\n\t\t\t\tPROCESSING";
+     cout<<" . ";
+     delay(400);
+     cout<<" . ";
+     delay(400);
+     cout<<" . ";
+     delay(800);
+     cout<<" . ";
+     clrscr();
+}
+
+
+
