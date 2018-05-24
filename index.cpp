@@ -502,5 +502,72 @@ void menu()
 }
 
 
+int order(int a,long double b)
+{
+   int x;
+   billdetail[i].sno=i+1;
+   if(a==1)
+     {
+     billdetail[i].name=a;
+     sum+=650*b;
+     x=650*b;
+     }
+   else if(a==2)
+     {
+     billdetail[i].name=a;
+     sum+=350*b;
+     x=350*b;
+     }
+   else if(a==3)
+     {
+     billdetail[i].name=a;
+     sum+=250*b;
+     x=250*b;
+     }
+   else if(a==4)
+     {
+     billdetail[i].name=a;
+     sum+=200*b;
+     x=200*b;
+     }
+   else if(a==5)
+     {
+     billdetail[i].name=a;
+     sum+=150*b;
+     x=150*b;
+     }
+   billdetail[i].amount=x;
+   billdetail[i].quantity=quantity;
+   up :
+   clrscr();
+   cout<<"\n\n\t\t\tANYTHING ELSE (Y/N) : ";
+   char s;
+   cin>>s;
+   if(s=='y' || s=='Y')
+   {
+   i++ ;
+   menu();
+   }
+   else if(s!='n' && s!='N')
+     {
+     clrscr();
+     cout<<"\n\n\n\n\t\t\t\tPROCESSING";
+     cout<<" . ";
+     delay(400);
+     cout<<" . ";
+     delay(400);
+     cout<<" . ";
+     delay(800);
+     cout<<" . ";
+     clrscr();
+     cout<<"\n\n\n\n\t\t\t\tINVALID ENTRY\n\t\t\t\tTRY AGAIN";
+     delay(2000);
+     clrscr();
+     goto up;
+     }
+
+}
+
+
 
 
