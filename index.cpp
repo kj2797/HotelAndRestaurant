@@ -468,5 +468,39 @@ void detail()
 }
 
 
+void menu()
+{
+    clrscr();
+    cout<<"\n\t\t\t||    ||  ******  |*    |   *    * ";
+    cout<<"\n\t\t\t| |  | |  |_____  | *   |   *    * ";
+    cout<<"\n\t\t\t|  ||  |  |       |  *  |   *    * ";
+    cout<<"\n\t\t\t|      |  ******  |    *|   ******";
+    cout<<"\n\t\t   ---------------------------------------------";
+    cout<<"\n\n\n   S.NO ||  PRODUCT NAME      ||  PRICE(Rs)||\t  DESCRIPTION";
+    cout<<"\n   -----------------------------------------------------------";
+    cout<<"\n   * 1  ||  VEG PIZZA         ||  650      ||    -Thin crust layed with exotic\n\t\t\t\t\t         cheese and red tomatoes";
+    cout<<"\n   * 2  ||  GARLIC BREAD      ||  350      ||    -Handmade bread filled with   \t\t\t\t\t                 Garlic and covered with cheese";
+    cout<<"    * 3  ||  GRILLED SANDWICH  ||  250      ||    -American Bread stuffed with \n\t\t\t\t\t         mashed potatoes and cheese ";
+    cout<<"\n   * 4  ||  LATTE             ||  200      ||    -Ghanian cocoa dipped in dark \n\t\t\t\t\t         sugar and dissolved in cow milk";
+    cout<<"   * 5  ||  SODA WATER        ||  150      ||   -Juice of fresh mountain lemon \t\t\t\t\t                 with fresh soda water";
+    int a=0;
+    cout<<"\n\n\t\tYOUR CHOICE : ";
+    cin>>a;
+    cout<<"\n\t\tQUANTITY : ";
+    cin>>quantity;
+    clrscr();
+    cout<<"\n\n\n\n\t\t\t\tPROCESSING";
+    cout<<" . ";
+    delay(400);
+    cout<<" . ";
+    delay(400);
+    cout<<" . ";
+    delay(800);
+    cout<<" . ";
+    clrscr();
+    order(a,quantity);
+}
+
+
 
 
