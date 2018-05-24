@@ -425,4 +425,48 @@ void welcome()
 }
 
 
+void detail()
+{
+     cout<<"\n\n\n\n\t\t\t\tPROCESSING";
+     cout<<" . ";
+     delay(400);
+     cout<<" . ";
+     delay(400);
+     cout<<" . ";
+     delay(800);
+     cout<<" . ";
+     clrscr();
+     cout<<"\n\n\t\t\tENTER YOUR NAME : ";
+     gets(pp1.name);
+     cout<<"\n\n\t\t\tENTER YOUR PHONE NUMBER : ";
+     cin>>pp1.number;
+     if(mode=='1')
+     {
+	 cout<<"\n\n\t\t\tENTER YOUR ADDRESS : ";
+	 gets(pp1.address);
+	 clrscr();
+     }
+     else if(mode=='3')
+     {
+	 cout<<"\n\n\t\t\tENTER YOUR ADDRESS : ";
+	 gets(pp1.address);
+	 clrscr();
+     }
+     else if(mode=='2')
+     {
+     strcpy(pp1.address,"NOT APPLICABLE");
+     }
+     cout<<"\n\n\n\n\t\t\t\tPROCESSING";
+     cout<<" . ";
+     delay(400);
+     cout<<" . ";
+     delay(400);
+     cout<<" . ";
+     delay(800);
+     cout<<" . ";
+     clrscr();
+}
+
+
+
 
