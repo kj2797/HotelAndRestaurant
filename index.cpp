@@ -568,6 +568,90 @@ int order(int a,long double b)
 
 }
 
+void bill()
+{
+    clrscr();
+    cout<<"\n\n\n\t\t\t****THANK YOU FOR ORDERING****";
+    up :
+    cout<<"\n\n\n\n\t\t\t\tPROCESSING";
+    cout<<" . ";
+    delay(400);
+    cout<<" . ";
+    delay(400);
+    cout<<" . ";
+    delay(800);
+    cout<<" . ";
+    delay(600);
+    clrscr();
+    cout<<"\n\t\t\t||====   ===||===   ||       ||      ";
+    delay(200);
+    cout<<"\n\t\t\t||  ||      ||      ||       ||      ";
+    delay(200);
+    cout<<"\n\t\t\t||====      ||      ||       ||      ";
+    delay(200);
+    cout<<"\n\t\t\t||  ||      ||      ||       ||      ";
+    delay(200);
+    cout<<"\n\t\t\t||====   ===||===   ||====== ||======";
+    delay(200);
+    cout<<"\n\n\n\tNAME : ";
+    puts(pp1.name);
+    cout<<"    PHONE NUMBER : "<<pp1.number;
+    cout<<"    ADDRESS : ";
+    puts(pp1.address);
+    delay(200);
+    cout<<"\n\n\t\t\t\t\tORDER ";
+    delay(200);
+    cout<<"\n\t\t\t\t  ================ ";
+    delay(200);
+    cout<<"\n\tS.NO "<<"  ||       ITEM             ||  QUANTITY  ||  AMOUNT";
+    for(int h=0;h<=i;h++)
+    {
+	 delay(200);
+	 if(billdetail[h].name==1)
+	    cout<<"\n\t*  "<<h+1<<" "<<"  ||     VEG PIZZA          ||   "<<billdetail[h].quantity<<"        ||"<<"   "<<billdetail[h].amount;
+	 else if(billdetail[h].name==2)
+	    cout<<"\n\t*  "<<h+1<<"  "<<" ||     GARLIC BREAD       ||   "<<billdetail[h].quantity<<"        ||"<<"   "<<billdetail[h].amount;
+	 else if(billdetail[h].name==3)
+	    cout<<"\n\t*  "<<h+1<<" "<<"  ||     GRILLED SANDWICH   ||   "<<billdetail[h].quantity<<"        ||"<<"   "<<billdetail[h].amount;
+	 else if(billdetail[h].name==4)
+	    cout<<"\n\t*  "<<h+1<<" "<<"  ||     LATTE              ||   "<<billdetail[h].quantity<<"        ||"<<"   "<<billdetail[h].amount;
+	 else if(billdetail[h].name==5)
+	    cout<<"\n\t*  "<<h+1<<" "<<"  ||     SODA WATER         ||   "<<billdetail[h].quantity<<"        ||"<<"   "<<billdetail[h].amount;
+    }
+    delay(3000);
+    cout<<"\n\n\t\t\tPROCEED TO PAY (Y/N) : ";
+    char d;
+    cin>>d;
+    if(d=='y' || d=='Y')
+       {
+       goto down;
+       clrscr();
+       }
+    else if(d=='n' || d=='N')
+      {
+      goto up;
+      }
+    else
+    {
+    clrscr();
+     cout<<"\n\n\n\n\t\t\t\tPROCESSING";
+     cout<<" . ";
+     delay(400);
+     cout<<" . ";
+     delay(400);
+     cout<<" . ";
+     delay(800);
+     cout<<" . ";
+     clrscr();
+     cout<<"\n\n\n\n\t\t\t\tINVALID ENTRY\n\t\t\t\tTRY AGAIN";
+     delay(2000);
+     clrscr();
+     goto up;
+    }
+     down :
+}
+
+
 
 
 
