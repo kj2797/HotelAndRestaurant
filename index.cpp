@@ -652,6 +652,58 @@ void bill()
 }
 
 
+void pay()
+{
+    up :
+    clrscr();
+    cout<<"\n\n\n\n\t\t\t\tPROCESSING";
+    cout<<" . ";
+    delay(400);
+    cout<<" . ";
+    delay(400);
+    cout<<" . ";
+    delay(800);
+    cout<<" . ";
+    delay(600);
+    clrscr();
+    cout<<"\n\n\n\t\t\tAMOUNT : "<<sum<<" Rs";
+    long double x;
+    cout<<"\n\n\t\t\tPAID : ";
+    cin>>x;
+    up1 :
+    if(x>=sum)
+	cout<<"\n\n\t\t\tCHANGE : "<<x-sum<<" Rs";
+    else
+      {
+      clrscr();
+      cout<<"\n\n\n\t\t\t        STOP JOKING!!!";
+      delay(2500);
+      goto up;
+      clrscr();
+      }
+    cout<<"\nCONTINUE (Y/N) : ";
+    char t;
+    cin>>t;
+    if(t!='y' && t!='Y')
+      {
+      clrscr();
+    cout<<"\n\n\n\n\t\t\t\tPROCESSING";
+    cout<<" . ";
+    delay(400);
+    cout<<" . ";
+    delay(400);
+    cout<<" . ";
+    delay(800);
+    cout<<" . ";
+    delay(600);
+    clrscr();
+      goto up1;
+      }
+}
+
+
+
+
 
 
 
