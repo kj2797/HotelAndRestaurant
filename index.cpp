@@ -702,6 +702,50 @@ void pay()
 }
 
 
+void end()
+{
+    clrscr();
+    cout<<"\n\n\n\t\t\t    ********THANK YOU********";
+    delay(2500);
+    clrscr();
+    cout<<"\n\n\n\t\t\t $$$$$--DO VISIT US AGAIN--$$$$$";
+    delay(2500);
+    abc :
+    clrscr();
+    cout<<"\n\n\n\n\n\n\n\n\n\n\n\t\t   NOTE : YOUR ORDER WILL BE READY IN 15 MINUTES";
+
+    cout<<"\n\n\t\t\t\tCONTINUE (Y/N):";
+    char s;
+    cin>>s;
+    if(s!='y' && s!='Y')
+    {
+    clrscr();
+    cout<<"\n\n\n\n\t\t\t\tPROCESSING";
+    cout<<" . ";
+    delay(400);
+    cout<<" . ";
+    delay(400);
+    cout<<" . ";
+    delay(800);
+    cout<<" . ";
+    delay(600);
+    clrscr();
+    goto abc;
+    }
+    clrscr();
+    cout<<"\n\n\n\n\t\t\t\tPROCESSING";
+    cout<<" . ";
+    delay(400);
+    cout<<" . ";
+    delay(400);
+    cout<<" . ";
+    delay(800);
+    cout<<" . ";
+    delay(600);
+    clrscr();
+}
+
+
 
 
 
