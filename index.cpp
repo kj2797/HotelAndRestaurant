@@ -746,6 +746,56 @@ void end()
 }
 
 
+void endanimation()
+{
+    clrscr();
+    cout<<"\n\n\n\n\t\t\t\tPROCESSING";
+    cout<<" . ";
+    delay(400);
+    cout<<" . ";
+    delay(400);
+    cout<<" . ";
+    delay(800);
+    cout<<" . ";
+    delay(600);
+    clrscr();
+	 int gdriver = DETECT,gmode;
+int x,y,I;
+	initgraph(&gdriver,&gmode,"C:\\Turboc3\\BGI");
+	x=getmaxx()/2;
+	y=getmaxy()/2;
+	for(int j=-3,k=-3,l=640,o=480;j<=400;j++,k++,l--,o--)
+	{
+		delay(5);
+		setcolor(j/3);
+		 rectangle(j,k,l,o);
+
+	}
+	for(j=-3,k=-3,l=640,o=480;j<=400;j++,k++,l--,o--)
+	{
+		delay(5);
+		setcolor(j/19);
+		 rectangle(j,k,l,o);
+
+	}
+	int midx, midy;
+	int radius = 350;
+	midx = getmaxx() / 2;
+	midy = getmaxy() / 2;
+	for(radius;radius>=0;radius--)
+	{
+	setcolor(radius/15);
+	circle(midx, midy, radius);
+	delay(10);
+	}
+	for(int U=1,L=80;U<=80;U++,L--)
+   {
+   gotoxy(U,1);
+   cout<<"";
+   gotoxy(L,10);
+   cout<<"";
+   delay(60);
+   }
 
 
 
