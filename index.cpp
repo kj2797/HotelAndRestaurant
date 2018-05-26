@@ -796,8 +796,34 @@ int x,y,I;
    cout<<"";
    delay(60);
    }
+   gotoxy(4,3);
+       cout<<"                                             	       	  ";
+       cout<<"\t                                            	                  ";
+       cout<<"\t                                          	                  ";
+       cout<<"\t                                		          ";
+       cout<<"\t                                                              ";
+       cout<<"\t                                                               ";
 
 
+       for(int O=1,m=24,r=6;O<25;O++,m--,r+=3)
+   {
+     gotoxy(1,O);
+     cout<<"";
+     delay(80);
+     gotoxy(80,m);
+     cout<<"";
+     gotoxy(r,23);
+     cout<<"";
+   }
+   gotoxy(2,13);
+   cout<<"\t\t           $     $     $$$$$$   $    $                         ";
+   cout<<"\n\t\t\t    $   $      $    $   $    $                         ";
+   cout<<"\n\t\t\t     $ $       $    $   $    $                         ";
+   cout<<"\n\t\t\t      $        $    $   $    $                         ";
+   cout<<"\n\t\t\t      $        $    $   $    $                         ";
+   cout<<"\n\t\t\t      $        $$$$$$   $$$$$$                         ";
+   delay(3000);
 
+}
 
 
